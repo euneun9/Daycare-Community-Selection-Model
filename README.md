@@ -8,15 +8,24 @@
   - 인천광역시의 어린이집 통합 데이터에 대해 umap 차원축소 후, hdbscan 분석 방법을 적용해 어린이집 군집화
   - 모아 어린이집 공동체의 중심으로써 안정적으로 기능할 국공립어린이집 확인
   - 소속 군집별로 국공립어린이집으로부터 최소 거리인 어린이집 추출
-![중심 모아어린이집 선정 순서도](./img/image02.png)
-![모아어린이집 그룹 생성 순서도](./img/image03.png)
+
+<figure class="half">  
+  <a href="link"><img src="./img/image02.png"></a>
+  <a href="link"><img src="./img/image03.png"></a>
+</figure>
 
 ## 어린이집 특징 차원축소 및 클러스터링 결과
   - T-SNE는 비선형적인 차원축소 방법이다. 기본적인 원리는 고차원의 데이터 간 거리를 저차원으로 축소하였을 때도 똑같이 유지. 점들의 유사도를 기반으로 축소하며, 점들의 유사도는 A를 중심으로 한 정규 분포에서 확률 밀도에 비례하여 이웃을 선택하면 포인트 A가 포인트 B를 이웃으로 선택한다는 조건부 확률로 계산된다.
   - 임베딩 차원에서도 잘 확장이 된다. 단순히 시각화를 위해서가 아니라 다른 기계 학습 작업에 대한 예비 단계로 범용 축소 기술로 사용할 수 있다. 특히 hdbscan 클러스러팅과 잘 협력한다.
-![결과1](./img/image04.png)
-![condensed_tree](./img/image05.png)
-  
+
+<figure class="half">  
+  <a href="link"><img src="./img/image04.png"></a>
+  <a href="link"><img src="./img/image05.png"></a>
+</figure>
+
 ## 최종 분석 결과
-![최종결과1](./img/image07.png)
-![최종결과1](./img/image08.png)
+<figure class="half">  
+  <a href="link"><img src="./img/image07.png"></a>
+  <a href="link"><img src="./img/image08.png"></a>
+</figure>
+
